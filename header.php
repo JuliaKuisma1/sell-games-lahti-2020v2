@@ -54,5 +54,8 @@
             ?>
           </div>
         </div>
+        <div class="search-form">
+          <?php get_search_form('Search in '); ?>
+        </div>
       </nav>
     </header>

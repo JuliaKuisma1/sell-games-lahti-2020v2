@@ -37,8 +37,8 @@
  
     if ( $wp_query->max_num_pages > 1 ) { ?>
         <nav class="pagination" role="navigation">
-            <div><?php next_posts_link( '&larr; Older posts' ); ?></div>
-            <div><?php previous_posts_link( 'Newer posts &rarr;' ); ?></div>
+            <?php next_posts_link( '&larr; Older posts' ); ?>
+            <?php previous_posts_link( 'Newer posts &rarr;' ); ?>
         </nav>
     <?php }
   }

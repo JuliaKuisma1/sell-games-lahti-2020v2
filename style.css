@@ -1,0 +1,179 @@
+/*!
+Theme Name: Sell Games
+Author: Miikka Saxlund
+Description: WordPress theme for Sell Games 2020
+*/
+
+@font-face {
+  font-family: sttransmission;
+  src: url("./fonts/StTransmission-800-ExtraBold.otf"); 
+}
+
+body {
+  background-color: rgb(34,43,111);
+  color: white;
+}
+
+#main-content:not(#main-content .wp-block-cover) {
+  max-width: 960px;
+  margin: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: sttransmission;
+  text-transform: uppercase;
+  margin-bottom: .5rem!important;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+  text-decoration: none;
+}
+
+.btn {
+  font-family: sttransmission;
+}
+
+.brand-yellow {
+  color: #FED13B!important;
+}
+
+/*
+ * Navbar
+ */
+
+#main-header .navbar {
+  max-width: 1024px;
+  margin: auto;
+}
+
+#main-header, #main-header .navbar {
+  background-color: rgb(34,43,111)!important;
+}
+
+#main-header .navbar a {
+  color: white;
+  font-family: sttransmission;
+}
+
+.navbar-nav a {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/*
+ * Footer
+ */
+
+#main-footer .navbar-text {
+  color: white!important;
+}
+
+#main-footer, #main-footer .navbar {
+  background-color: rgb(34,43,111)!important;
+}
+
+#main-footer .navbar {
+  max-width: 1024px;
+  margin: auto;
+}
+
+/*
+ * Post cards
+ */
+
+.card {
+  border: none!important;
+}
+
+.card-body p {
+  color: black;
+}
+
+.blog-posts {
+  display: flex;
+  flex-wrap: wrap!important;
+  justify-content: center!important;
+  max-width: 1024px;
+  margin: auto;
+}
+
+.blog-posts-card {
+  width: 300px!important;
+  flex: none!important;
+  margin-top: 15px!important;
+  margin-bottom: 15px!important;
+}
+
+.blog-posts-card a {
+  color: rgb(34,43,111);
+}
+
+.pagination {
+  max-width: 1024px;
+  margin: auto;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.pagination a {
+  color: rgb(34,43,111)!important;
+  padding: 12px 24px 12px 24px;
+}
+.pagination:hover {
+  text-decoration: none;
+}
+
+/* Gutenberg */
+
+p {
+  margin-bottom: 1rem!important;
+}
+
+.wp-block-cover {
+  padding: 60px 0 60px 0;
+}
+.wp-block-cover__inner-container {
+  max-width: 960px;
+}
+
+.wp-block-cover h1, .wp-block-cover h2, .wp-block-cover h3, .wp-block-cover h4, .wp-block-cover h5, .wp-block-cover h6 {
+  max-width: 100%!important;
+}
+
+.wp-block-button__link {
+  font-size: 16px;
+  font-family: sttransmission;
+  border-radius: .25rem!important;
+  padding: 12px 46px 12px 46px!important;
+}
+
+.cta {
+  margin-top: 30px!important;
+  margin-bottom: 14px!important;
+}
+
+.has-vivid-red-background-color, .has-pale-pink-background-color {
+  background-color: rgb(190, 58, 34)!important;
+}
+.has-vivid-red-background-color:hover, .has-pale-pink-background-color:hover {
+  background-color: rgba(190, 58, 34,0.9)!important;
+}
+.has-luminous-vivid-orange-background-color, .has-luminous-vivid-amber-background-color {
+  background-color: rgb(254, 209, 58)!important;
+}
+.has-luminous-vivid-orange-background-color:hover, .has-luminous-vivid-amber-background-color:hover {
+  background-color: rgba(254, 209, 58, 0.9)!important;
+}
+.has-light-green-cyan-background-color, .has-vivid-green-cyan-background-color {
+  background-color: rgb(14, 73, 68)!important;
+}
+.has-light-green-cyan-background-color:hover, .has-vivid-green-cyan-background-color:hover {
+  background-color: rgba(14, 73, 68, 0.9)!important;
+}
+.has-pale-cyan-blue-background-color, .has-vivid-cyan-blue-background-color {
+  background-color: rgba(34, 43, 111)!important;
+}
+.has-pale-cyan-blue-background-color:hover, .has-vivid-cyan-blue-background-color:hover {
+  background-color: rgba(34, 43, 111, 0.9)!important;
+}

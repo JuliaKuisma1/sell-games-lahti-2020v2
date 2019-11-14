@@ -223,7 +223,7 @@ p {
     font-size: 14px;
   }
   .card-body {
-    padding: 15px;
+    padding: 30px!important;
   }
 }
 
@@ -253,7 +253,7 @@ p {
 }
 
 #card-title {
-  margin-bottom: 60px;
+  margin-bottom: 60px!important;
 }
 
 .card-body h2, .card-body h3, .card-body h4, .card-body h5  {

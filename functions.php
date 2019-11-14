@@ -47,4 +47,22 @@
   function posts_link_attributes() {
     return 'class="btn btn-light"';
   }
+
+  /*
+    Widget areas
+  */
+  function arphabet_widgets_init() {
+
+    register_sidebar( array(
+      'name'          => 'Notification bar',
+      'id'            => 'notification_bar',
+      'before_widget' => '<div id="notification-bar" class="widget-area">',
+      'after_widget'  => '<i id="close-notification" class="fas fa-times-circle"></i></div>',
+      'before_title'  => '',
+      'after_title'   => '',
+    ) );
+  
+  }
+  add_action( 'widgets_init', 'arphabet_widgets_init' );
+
 ?>

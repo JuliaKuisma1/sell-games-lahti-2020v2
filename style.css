@@ -233,6 +233,10 @@ p {
     padding-right: 0px;
     margin-bottom: 15px;
   }
+  #single-content {
+    margin:0;
+    padding:0!important;
+  }
 }
 
 #notification-bar {

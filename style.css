@@ -230,7 +230,7 @@ p {
   }
   .single-card .card-body p {
     line-height: 1em;
-    padding-right: 0px;
+    padding-right: 0px!important;
     margin-bottom: 15px;
   }
   #single-content {

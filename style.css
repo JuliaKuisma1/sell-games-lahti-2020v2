@@ -222,18 +222,18 @@ p {
   #notification-bar {
     font-size: 14px;
   }
-  .card-body {
+  .single-card .card-body {
     padding: 30px!important;
   }
-  .card-title {
+  .single-card .card-title {
     margin-bottom: 0px!important;
   }
-  .card-body p {
+  .single-card .card-body p {
     line-height: 1em;
     padding-right: 0px;
     margin-bottom: 15px;
   }
-  #single-content {
+  .single-card #single-content {
     margin:0;
     padding:0!important;
   }
@@ -260,11 +260,11 @@ p {
   right: 15px;
 }
 
-.card-body {
+.single-card .card-body {
   padding: 60px;
 }
 
-.card-body h2, .card-body h3, .card-body h4, .card-body h5  {
+.single-card .card-body h2, .card-body h3, .card-body h4, .card-body h5  {
   font-size: 20px;
   margin-bottom: 15px!important;
   margin-top: 15px!important;
@@ -275,11 +275,11 @@ p {
 }
 
 
-.card-title {
+.single-card .card-title {
   margin-bottom: 60px!important;
 }
 
-.card-body p {
+.single-card .card-body p {
   line-height: 2em;
   padding-right: 60px;
   margin-bottom: 30px;

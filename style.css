@@ -244,3 +244,24 @@ p {
   position: absolute;
   right: 15px;
 }
+
+.card-body {
+  padding: 60px;
+}
+
+#card-title {
+  margin-bottom: 60px;
+}
+
+.card-body h2, .card-body h3, .card-body h4, .card-body h5  {
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  font-family: Helvetica, Arial;
+}
+
+.card-body p {
+  line-height: 2em;
+  padding-right: 60px;
+  margin-bottom: 30px;
+}

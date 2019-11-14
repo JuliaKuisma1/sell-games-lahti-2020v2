@@ -252,10 +252,6 @@ p {
   padding: 60px;
 }
 
-#card-title {
-  margin-bottom: 60px!important;
-}
-
 .card-body h2, .card-body h3, .card-body h4, .card-body h5  {
   font-size: 20px;
   margin-bottom: 15px!important;
@@ -264,6 +260,11 @@ p {
   font-weight: bold;
   color: black;
   font-family: Helvetica, Arial;
+}
+
+
+#card-title {
+  margin-bottom: 60px!important;
 }
 
 .card-body p {

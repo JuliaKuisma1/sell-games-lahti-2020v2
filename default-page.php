@@ -12,5 +12,5 @@
         endwhile; 
       else :
         echo "Nothing found";
-      endif;
+      endif; ?>
 </div>

@@ -131,7 +131,18 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   margin: auto;
 }
 
-.post_image {
+@media only screen and (max-width: 990px) {
+  .main-content {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .post-image {
+    max-width: 100%;
+  }
+}
+
+.post-image {
   padding-bottom: 10px;
 }
 
@@ -139,6 +150,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 .subpage-container {
   background-color: #be3922;
   margin: 0;
+  padding: 0;
 }
 
 .subpage-content {
@@ -146,22 +158,29 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   margin: auto;
 }
 
-.subpages {
+.subpages, .parent-link {
   display: inline-flex;
   list-style: none;
   margin: 0;
 }
 
-.subpages a:link, a:visited {
-  background-color: rgb(190, 58, 34);
-  color: rgb(254, 208, 58);
+.parent-link a {
+  height: 44px;
+}
+
+.subpage-content a {
+  display: inline-flex;
   padding: 10px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
 }
 
-.subpages a:hover, a:active {
+.subpage-content a:link, a:visited {
+  background-color: rgb(190, 58, 34);
+  color: rgb(254, 208, 58);
+}
+
+.subpage-content a:hover, a:active {
   background-color: rgb(254, 208, 58);
   color: rgb(34,43,111);
 }

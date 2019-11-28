@@ -364,3 +364,9 @@ p {
   font-size: 14px;
   color: white!important;
 }
+@media (max-width: 992px) {
+  #subnav .page_item {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}

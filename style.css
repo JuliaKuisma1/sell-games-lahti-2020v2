@@ -172,12 +172,14 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 
 .subpage-content a:link, .subpage-content a:visited {
   background-color: rgb(190, 58, 34);
-  color: white;
+  color: rgba(255,255,255,0.9);
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .subpage-content a:hover, .subpage-content a:active {
-  background-color: rgb(254, 208, 58);
-  color: rgb(34,43,111);
+  color: white;
+  text-decoration: underline;
 }
 
 /* Gutenberg */

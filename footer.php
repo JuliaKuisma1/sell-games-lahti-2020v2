@@ -1,24 +1,5 @@
     <footer id="main-footer">
-      <nav class="navbar navbar-light bg-light">
-        <span class="navbar-text">
-          <?php
-              /**
-               * Displays the main menu
-               * https://developer.wordpress.org/reference/functions/wp_nav_menu/
-               */
-              $args = array(
-                'menu' => 'some-menu',
-                'menu_id' => 'some-menu',
-                'container' => 'nav',
-                'depth' => 1,
-                'echo' => false,
-                'wrap-class' => 'navbar-nav',
-                'items_wrap' => '%3$s'
-              );
-              echo strip_tags( wp_nav_menu( $args ), '<a>' );
-            ?>
-        </span>
-      </nav>
+
     </footer>
     <!-- Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

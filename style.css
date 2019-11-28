@@ -15,6 +15,7 @@ body {
 }
 
 #main-content:not(#main-content .wp-block-cover) {
+  margin-top: 40px!important;
   max-width: 960px;
   margin: auto;
 }

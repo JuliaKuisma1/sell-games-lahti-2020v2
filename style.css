@@ -347,3 +347,14 @@ p {
     flex-basis: initial!important;
   }
 }
+
+#sub-navigation {
+  padding: 15px!important;
+  background: rgba(255,255,255,0.1)!important;
+}
+
+#subnav a {
+  font-weight: bold;
+  font-size: 14px;
+  color: white!important;
+}

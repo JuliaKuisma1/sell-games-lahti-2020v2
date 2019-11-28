@@ -16,10 +16,10 @@ get_header(); ?>
 </div>
 -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#subnav" aria-controls="subnav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+  <div class="collapse navbar-collapse" id="subnav">
     <div class="navbar-nav">
       <?php if ( $post->post_parent ) { ?>
             <a class="nav-item nav-link" href="<?php echo get_permalink( $post->post_parent ); ?>" >
@@ -29,7 +29,6 @@ get_header(); ?>
     </div>
   </div>
 </nav>
-
 <div class="main-content">
 <?php // implement path?
     if ( have_posts() ) {

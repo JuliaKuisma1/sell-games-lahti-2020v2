@@ -175,16 +175,6 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   text-decoration: none;
 }
 
-.subpage-content a:link, a:visited {
-  background-color: rgb(190, 58, 34);
-  color: rgb(254, 208, 58);
-}
-
-.subpage-content a:hover, a:active {
-  background-color: rgb(254, 208, 58);
-  color: rgb(34,43,111);
-}
-
 /* Gutenberg */
 
 p {

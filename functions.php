@@ -65,7 +65,9 @@
   }
   add_action( 'widgets_init', 'arphabet_widgets_init' );
 
-  // list child pages
+  /*
+   list child pages
+  */
   function wpb_list_child_pages() { 
       global $post; 
       
@@ -81,5 +83,12 @@
     }
      
     add_shortcode('wpb_childpages', 'wpb_list_child_pages');
+
+    /*
+      Excerpt length
+    */
+    add_filter( 'excerpt_length', function($length) {
+      return 12;
+  } );
 
 ?>

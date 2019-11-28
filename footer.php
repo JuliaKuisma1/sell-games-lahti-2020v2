@@ -1,7 +1,22 @@
     <footer id="main-footer">
       <nav class="navbar navbar-light bg-light">
         <span class="navbar-text">
-          Copyright 2019 - 2020 Sell Games Lahti
+          <?php
+              /**
+               * Displays the main menu
+               * https://developer.wordpress.org/reference/functions/wp_nav_menu/
+               */
+              $args = array(
+                'menu' => 'some-menu',
+                'menu_id' => 'some-menu',
+                'container' => 'nav',
+                'depth' => 1,
+                'echo' => false,
+                'wrap-class' => 'navbar-nav',
+                'items_wrap' => '%3$s'
+              );
+              echo strip_tags( wp_nav_menu( $args ), '<a>' );
+            ?>
         </span>
       </nav>
     </footer>

@@ -29,7 +29,7 @@
   <body>
     <?php dynamic_sidebar( 'notification_bar' ); ?>
     <header id="main-header">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between">
         <a class="navbar-brand" href="<?php echo home_url(); ?>">
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo_slogan.svg" height="48px" alt="Sell Games Lahti 2020">
         </a>

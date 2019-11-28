@@ -28,16 +28,6 @@ h1, h2, h3, h4, h5, h6 {
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   text-decoration: none;
 }
-
-#main-content a {
-  color: rgba(255,255,255,0.7)!important;
-  text-decoration: underline;
-}
-
-.card-title a {
-  color: #222B6F!important;
-}
-
 .btn {
   font-family: sttransmission;
 }

@@ -45,7 +45,7 @@ get_header(); ?>
                                 the_post_thumbnail('medium', array('class' => 'card-img-top')); 
                               } else {
                                 ?>
-                                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img-placeholder-medium.png">
+                                  <img class="sport-card-img" src="<?php echo get_stylesheet_directory_uri(); ?>/images/img-placeholder-medium.png">
                                 <?php
                               }
                             ?>

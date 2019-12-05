@@ -28,7 +28,7 @@ get_header(); ?>
           }
       } ?>
     </div>
-    <div id="sidebar-container" class="col-lg-8 col-sm-12">
+    <div id="sidebar-container" class="col-lg-4 col-sm-12">
       <?php dynamic_sidebar( 'sidebar' ); ?>
     </div>
   </div>

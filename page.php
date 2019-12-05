@@ -11,7 +11,6 @@ get_header(); ?>
               the_post();  
               the_post_thumbnail();?>
               <?php the_content(); ?>
-              </div>
           <?php }
       } ?>  
       </div>

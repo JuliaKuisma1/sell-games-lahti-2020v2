@@ -91,6 +91,10 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   padding: 0.6rem!important;
 }
 
+.card-body a {
+  color: #222B6F!important;
+}
+
 .sport-card-link {
   color: white!important;
   font-weight: bold;
@@ -102,10 +106,6 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 
 .card-body p {
   color: black;
-}
-
-.card-body a {
-  color: #222B6F!important;
 }
 
 .blog-posts {

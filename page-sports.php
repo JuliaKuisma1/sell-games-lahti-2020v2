@@ -51,7 +51,9 @@ get_header(); ?>
                             ?>
                           </a>
                           <div class="card-body">
-                            Name
+                            <a class="sport-card-link" href="<?php the_permalink(); ?>">
+                              <?php the_title(); ?>
+                            </a>
                           </div>
                         </div>
                 <?php endwhile; ?>

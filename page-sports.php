@@ -39,7 +39,21 @@ get_header(); ?>
               <?php while ( $parent->have_posts() ) : $parent->the_post(); ?>
                   <?php if (get_the_ID() == 47 || get_the_ID() == 61) continue; ?>
                   <div id="parent-<?php the_ID(); ?>" class="parent-page">
-                      <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+
+                      <div class="blog-posts-card card">
+                        <a href="<?php the_permalink(); ?>">
+                          <?php 
+                            if ( has_post_thumbnail() ) {
+                              the_post_thumbnail('medium', array('class' => 'card-img-top')); 
+                            } else {
+                              ?>
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img-placeholder-medium.png">
+                              <?php
+                            }
+                          ?>
+                        </a>
+                      </div>
+
 
                   </div>
               <?php endwhile; ?>

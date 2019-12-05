@@ -26,7 +26,7 @@ get_header(); ?>
                     if ( $parent->have_posts() ) : ?>
                         <?php while ( $parent->have_posts() ) : $parent->the_post(); ?>
                                 <div class="sport-card card">
-                                  <a href="<?php the_permalink(); ?>">
+
                                     <?php 
                                       if ( has_post_thumbnail() ) {
                                         the_post_thumbnail('medium', array('class' => 'card-img-top')); 
@@ -36,11 +36,11 @@ get_header(); ?>
                                         <?php
                                       }
                                     ?>
-                                  </a>
+  
                                   <div class="card-body">
-                                    <a class="sport-card-link" href="<?php the_permalink(); ?>">
+                                    <p class="sport-card-link">
                                       <?php the_title(); ?>
-                                    </a>
+                                    </p>
                                   </div>
                                 </div>
                         <?php endwhile; ?>

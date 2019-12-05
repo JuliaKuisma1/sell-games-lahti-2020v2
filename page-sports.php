@@ -24,7 +24,7 @@ get_header(); ?>
           <h2><?php the_title(); ?></h2>
           <?php the_content(); ?>
 
-          <div class="card-deck">
+          <div class="card-deck"></div>
             <?php
             $id = get_the_ID();
             $args = array(
@@ -45,7 +45,7 @@ get_header(); ?>
                                 the_post_thumbnail('medium', array('class' => 'card-img-top')); 
                               } else {
                                 ?>
-                                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img-placeholder-medium.png">
+                                  <img width="200px" height="200px" src="<?php echo get_stylesheet_directory_uri(); ?>/images/img-placeholder-medium.png">
                                 <?php
                               }
                             ?>

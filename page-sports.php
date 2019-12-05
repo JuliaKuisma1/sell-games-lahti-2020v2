@@ -37,7 +37,7 @@ get_header(); ?>
           $parent = new WP_Query( $args );
           if ( $parent->have_posts() ) : ?>
               <?php while ( $parent->have_posts() ) : $parent->the_post(); ?>
-                  <?php if (the_ID() == "47" || the_ID() == "61") continue; ?>
+                  <?php if (get_the_ID() == 47 || get_the_ID() == 61) continue; ?>
                   <div id="parent-<?php the_ID(); ?>" class="parent-page">
                       <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
 

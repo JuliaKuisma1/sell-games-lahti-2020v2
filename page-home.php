@@ -1,11 +1,28 @@
-<?php
-  get_header(); ?>
+<?php 
+  /* Template Name: Home page */
+  get_header(); 
+?>
   <main id="main-content">
-    <div class="blog-posts card-deck">
-      <?php 
+    <?php 
       if ( have_posts() ) :
-        while ( have_posts() ) : the_post();
-        ?>
+        while ( have_posts() ) : the_post(); 
+          if (!is_front_page() && !is_home()) {
+            ?>
+              <h2><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h2>
+            <?php
+          }
+          the_content(); 
+        endwhile; 
+      else :
+        echo "Nothing found";
+      endif;
+
+     ?>
+      <div class="blog-posts card-deck">
+        <?php
+        $args = array( 'numberposts' => 3, 'order'=> 'ASC', 'orderby' => 'title' );
+        $postslist = get_posts( $args );
+        foreach ($postslist as $post) :  setup_postdata($post); ?>
           <div class="blog-posts-card card">
             <a href="<?php the_permalink(); ?>">
               <?php 
@@ -33,19 +50,8 @@
                 </small>
               </p>
             </div>
-              
-                    
           </div>
-        <?php
-        endwhile; ?>
-        </div><!-- End of card deck -->
-          <?php pagination_nav(); ?>
-        <?php
-      else :
-        echo "Nothing found";
-      endif;
-     ?>
-
-    
+        <?php endforeach; ?>
+      </div>
   </main>
 <?php get_footer(); ?>

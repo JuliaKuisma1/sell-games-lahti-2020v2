@@ -74,7 +74,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
  * Post cards
  */
 
-.sports-card {
+.sport-card {
   width: 300px!important;
   flex: none!important;
   margin-top: 15px!important;

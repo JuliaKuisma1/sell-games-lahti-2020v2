@@ -50,6 +50,9 @@ get_header(); ?>
                               }
                             ?>
                           </a>
+                          <div class="card-body">
+                            Name
+                          </div>
                         </div>
                 <?php endwhile; ?>
             <?php endif; ?>

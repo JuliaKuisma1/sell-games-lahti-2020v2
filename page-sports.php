@@ -40,7 +40,7 @@ get_header(); ?>
                   <?php if (get_the_ID() == 47 || get_the_ID() == 61) continue; ?>
                   <div id="parent-<?php the_ID(); ?>" class="parent-page">
 
-                      <div class="blog-posts-card card">
+                      <div class="sport-card card">
                         <a href="<?php the_permalink(); ?>">
                           <?php 
                             if ( has_post_thumbnail() ) {

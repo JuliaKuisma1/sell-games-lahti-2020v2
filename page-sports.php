@@ -15,7 +15,7 @@ get_header(); ?>
 
 <div class="main-content">
   <div class="row">
-    <div class="col-lg-8 col-sm-12">
+    <div id="main-content-container" class="col-lg-8 col-sm-12">
       <?php // implement path?
       if ( have_posts() ) {
           while ( have_posts() ) {
@@ -28,12 +28,10 @@ get_header(); ?>
           }
       } ?>
     </div>
-    <div class="col-lg-8 col-sm-12">
-
+    <div id="sidebar-container" class="col-lg-8 col-sm-12">
+      <?php dynamic_sidebar( 'sidebar' ); ?>
     </div>
-    
   </div>
-
 </div>
 
 <?php get_footer(); ?>

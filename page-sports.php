@@ -38,13 +38,11 @@ get_header(); ?>
           if ( $parent->have_posts() ) : ?>
               <?php while ( $parent->have_posts() ) : $parent->the_post(); ?>
                   <div id="parent-<?php the_ID(); ?>" class="parent-page">
-                      <h1><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
-                      <p><?php the_advanced_excerpt(); ?></p>
+                      <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
                   </div>
               <?php endwhile; ?>
-          <?php endif; wp_reset_postdata(); ?>
+          <?php endif; ?>
 
-          <?php echo do_shortcode('[wpb_sports]'); ?>
         <?php
         }
       } ?>

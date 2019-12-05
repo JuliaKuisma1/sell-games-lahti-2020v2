@@ -45,7 +45,7 @@ get_header(); ?>
                                 the_post_thumbnail('medium', array('class' => 'card-img-top')); 
                               } else {
                                 ?>
-                                  <img width="200px" height="200px" src="<?php echo get_stylesheet_directory_uri(); ?>/images/img-placeholder-medium.png">
+                                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img-placeholder-medium.png">
                                 <?php
                               }
                             ?>

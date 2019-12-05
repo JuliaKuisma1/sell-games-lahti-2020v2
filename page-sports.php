@@ -38,8 +38,6 @@ get_header(); ?>
           if ( $parent->have_posts() ) : ?>
               <?php while ( $parent->have_posts() ) : $parent->the_post(); ?>
                   <?php if (get_the_ID() == 47 || get_the_ID() == 61) continue; ?>
-                  <div id="parent-<?php the_ID(); ?>" class="parent-page">
-
                       <div class="sport-card card">
                         <a href="<?php the_permalink(); ?>">
                           <?php 
@@ -53,9 +51,6 @@ get_header(); ?>
                           ?>
                         </a>
                       </div>
-
-
-                  </div>
               <?php endwhile; ?>
           <?php endif; ?>
 

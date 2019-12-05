@@ -13,17 +13,21 @@ get_header(); ?>
   </div>
 </nav>
 <div class="main-content">
-    <?php if ( have_posts() ) {
+  <div class="row">
+    <div id="main-content-container" class="col-lg-8 col-sm-12">
+      <?php if ( have_posts() ) {
             while ( have_posts() ) {
                 the_post(); ?> 
-                    <div class="post-image">
-                        <?php the_post_thumbnail();?>
-                    </div>
-                    <h2><?php the_title(); ?></h2>
-                    <?php the_content(); ?>
+                  <h2><?php the_title(); ?></h2>
+                  <?php the_content(); ?>
                 
             <?php
             }
         }?>
+    </div>
+    <div id="sidebar-container" class="col-lg-4 col-sm-12">
+      <?php dynamic_sidebar( 'sidebar' ); ?>
+    </div>
+  </div>
 </div>     
 <?php get_footer(); ?>

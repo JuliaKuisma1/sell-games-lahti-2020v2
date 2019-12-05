@@ -1,4 +1,7 @@
-<?php get_header(); ?>
+<?php 
+<?php
+/* Template Name: Home page */
+  get_header(); ?>
   <main id="main-content">
     <div class="blog-posts card-deck">
       <?php 

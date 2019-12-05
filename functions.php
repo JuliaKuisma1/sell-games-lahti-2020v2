@@ -62,6 +62,15 @@
       'before_title'  => '',
       'after_title'   => '',
     ) );
+
+    register_sidebar( array(
+      'name'          => 'Sidebar',
+      'id'            => 'sidebar',
+      'before_widget' => '<div class="sidebar-widget">',
+      'after_widget'  => '</div>',
+      'before_title'  => '<h5>',
+      'after_title'   => '</h5>',
+    ) );
   
   }
   add_action( 'widgets_init', 'arphabet_widgets_init' );

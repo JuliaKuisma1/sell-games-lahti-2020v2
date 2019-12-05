@@ -86,7 +86,13 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   width: 200px!important;
   height: 200px!important;
 }
+
+.sport-card .card-body {
+  padding: 0.6rem!important;
+}
+
 .sport-card-link {
+  color: white!important;
   font-weight: bold;
 }
 

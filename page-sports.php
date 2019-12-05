@@ -24,7 +24,7 @@ get_header(); ?>
           <h2><?php the_title(); ?></h2>
           <?php the_content(); ?>
 
-          <div class="card-deck"></div>
+          <div class="card-deck">
             <?php
             $id = get_the_ID();
             $args = array(

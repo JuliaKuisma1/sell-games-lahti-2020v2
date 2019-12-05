@@ -14,17 +14,24 @@ get_header(); ?>
 </nav>
 
 <div class="main-content">
-<?php // implement path?
-    if ( have_posts() ) {
-        while ( have_posts() ) {
-            the_post(); ?> 
-                <?php the_post_thumbnail();?>
-                <h2><?php the_title(); ?></h2>
-                <?php the_content(); ?>
-            </div>
-        <?php
-        }
-    } ?>  
+
+  <div class="row">
+    <div id="main-content-container" class="col-lg-8 col-sm-12">
+      <?php // implement path?
+        if ( have_posts() ) {
+            while ( have_posts() ) {
+                the_post(); ?> 
+                    <?php the_post_thumbnail();?>
+                    <h2><?php the_title(); ?></h2>
+                    <?php the_content(); ?>
+            <?php
+            }
+        } ?>  
+      </div>
+      <div id="sidebar-container" class="col-lg-4 col-sm-12">
+        <?php dynamic_sidebar( 'sidebar' ); ?>
+      </div>
+    </div>
 </div>
 
 <?php get_footer(); ?>

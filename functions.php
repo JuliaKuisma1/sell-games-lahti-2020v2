@@ -94,6 +94,19 @@
   function wpb_list_sports_child_pages() { 
     global $post; 
     if ( is_page() && $post->post_parent )
+      $childpages = wp_list_pages( 'sort_column=menu_order&title_li=&echo=0&include=47,61' );
+    else
+      $childpages = wp_list_pages( 'sort_column=menu_order&title_li=&echo=0&include=47,61' );
+    if ( $childpages ) {
+      $string = $childpages;
+    }
+    return $string;
+  }
+  add_shortcode('wpb_sports_childpages', 'wpb_list_sports_child_pages');
+
+  function wpb_list_sports() { 
+    global $post; 
+    if ( is_page() && $post->post_parent )
       $childpages = wp_list_pages( 'sort_column=menu_order&title_li=&child_of=' . $post->post_parent . '&echo=0&exclude=47,61' );
     else
       $childpages = wp_list_pages( 'sort_column=menu_order&title_li=&child_of=' . $post->ID . '&echo=0&exclude=47,61' );
@@ -102,7 +115,7 @@
     }
     return $string;
   }
-  add_shortcode('wpb_sports_childpages', 'wpb_list_sports_child_pages');
+  add_shortcode('wpb_sports', 'wpb_list_sports');
 
   /*
     Excerpt length

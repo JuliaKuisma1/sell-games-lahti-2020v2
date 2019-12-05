@@ -8,7 +8,7 @@ get_header(); ?>
   </button>
   <div class="collapse navbar-collapse" id="subnav">
     <div class="navbar-nav">
-      <?php echo do_shortcode('[wpb_childpages]'); ?>
+      <?php echo do_shortcode('[wpb_sports_childpages]'); ?>
     </div>
   </div>
 </nav>
@@ -23,7 +23,7 @@ get_header(); ?>
           <?php the_post_thumbnail();?>
           <h2><?php the_title(); ?></h2>
           <?php the_content(); ?>
-          <?php echo do_shortcode('[wpb_sports_childpages]'); ?>
+          <?php echo do_shortcode('[wpb_sports]'); ?>
         <?php
         }
       } ?>

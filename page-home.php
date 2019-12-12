@@ -20,7 +20,7 @@
      ?>
       <div class="blog-posts card-deck">
         <?php
-        $args = array( 'numberposts' => 3, 'order'=> 'ASC', 'orderby' => 'title' );
+        $args = array( 'numberposts' => 4, 'orderby'=> 'date' );
         $postslist = get_posts( $args );
         foreach ($postslist as $post) :  setup_postdata($post); ?>
           <div class="blog-posts-card card">

@@ -2,7 +2,7 @@
   get_header(); ?>
   <main id="main-content">
     <div class="row">
-      <div id="main-content-container" class="col-lg-8 col-sm-12">
+      <div style="padding-top:48px;" class="col-lg-8 col-sm-12">
         <div class="blog-posts card-deck">
           <?php 
           if ( have_posts() ) :

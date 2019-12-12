@@ -1,8 +1,6 @@
 <?php
   get_header(); ?>
   <main id="main-content">
-    <div class="row">
-      <div style="padding-top:48px;" class="col-lg-8 col-sm-12">
         <div class="blog-posts card-deck">
           <?php 
           if ( have_posts() ) :
@@ -48,9 +46,6 @@
           endif;
         ?>
       </div>
-      <div id="sidebar-container" class="col-lg-4 col-sm-12">
-        <?php dynamic_sidebar( 'sidebar' ); ?>
-      </div>
-    </div>
+
   </main>
 <?php get_footer(); ?>

@@ -6,7 +6,7 @@
     <!-- Site title -->
     <title>
       <?php 
-        if (is_front_page() || is_home()) {
+        if (is_front_page()) {
           bloginfo( 'name' );
           _e( ' - ' );
           bloginfo( 'description' );

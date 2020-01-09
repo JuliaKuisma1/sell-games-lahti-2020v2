@@ -6,9 +6,9 @@
         ?> 
           <div class="single-card card">
             <?php 
-              if ( has_post_thumbnail() ) {
-                the_post_thumbnail('large', array('class' => 'card-img-top single-image')); 
-              } ?>
+              //if ( has_post_thumbnail() ) {
+              //  the_post_thumbnail('large', array('class' => 'card-img-top single-image')); 
+              //} ?>
             <div class="card-body">
               <h1 class="card-title">
                 <?php the_title(); ?>

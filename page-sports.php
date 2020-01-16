@@ -5,7 +5,7 @@ get_header(); ?>
 
 <div class="main-content">
   <div class="row">
-    <div id="main-content-container" class="col-lg-8 col-sm-12">
+    <div id="main-content-container" class="col-lg-12 col-sm-12">
       <?php
       if ( have_posts() ) {
         while ( have_posts() ) {

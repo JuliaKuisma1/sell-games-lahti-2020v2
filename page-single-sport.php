@@ -2,11 +2,6 @@
 /* Template Name: Single sport */
 
 get_header(); ?>
-<nav id="sub-navigation" class="navbar navbar-expand-lg navbar-light bg-light">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#subnav" aria-controls="subnav" aria-expanded="false" aria-label="Toggle navigation">
-    <i class="fas fa-bars"></i>
-  </button>
-</nav>
 
 <div class="main-content">
   <div class="row">

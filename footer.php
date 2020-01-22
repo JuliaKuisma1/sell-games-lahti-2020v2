@@ -28,8 +28,8 @@
         </div>
         <div class="col-6 col-md-2 col-xs-12">
           <div class="sosial-container">
-            <a href="https://www.facebook.com/SELLgames2020/"><i class="fab fa-facebook-square fa-2x"></i></a>
-            <a href="https://www.instagram.com/sellgames2020/"><i class="fab fa-instagram fa-2x"></i><a>
+            <a href="https://www.facebook.com/SELLgames2020/" target="blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+            <a href="https://www.instagram.com/sellgames2020/" target="blank"><i class="fab fa-instagram fa-2x"></i><a>
           </div>
         </div>
       </div>

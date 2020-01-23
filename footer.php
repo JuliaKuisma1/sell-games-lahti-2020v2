@@ -16,16 +16,17 @@
             <li><a href="mailto:sellgames2020@lamk.fi">sellgames2020@lamk.fi</a></li>
           </ul>
         </div>
-        <!-- Map container -->
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-          <?php //do_shortcode('[wpgmza id="1"]') ?>
-        </div>
         <!-- Social media -->
-        <div class="col-lg-3 col-md-2 col-sm-6 col-xs-12">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
           <div class="sosial-container">
             <a href="https://www.facebook.com/SELLgames2020/" target="blank"><i class="fab fa-facebook-square fa-2x"></i></a>
             <a href="https://www.instagram.com/sellgames2020/" target="blank"><i class="fab fa-instagram fa-2x"></i><a>
+            <a href="https://www.youtube.com/channel/UCqCLjasCVcWhM1v8lcD84mQ"><i class="fab fa-youtube fa-2x"></i></a>
           </div>
+        </div>
+        <!-- Map container -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <?php //do_shortcode('[wpgmza id="1"]') ?>
         </div>
       </div>
     </div>

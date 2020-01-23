@@ -1,32 +1,27 @@
     <footer id="main-footer" style="background-color: yellow">
     <div class="footer-container">
       <div class="row">
-        <div class="col-sm-6 col-md-5 col-xs-12">
+        <!-- SELL Logo -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
           <a href="<?php echo home_url(); ?>">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/SELLGAMES_logo.png" height="90px" alt="Sell Games Lahti 2020">
           </a>
         </div>
-        <div class="col-sm-6 col-md-5 col-xs-12">
+        <!-- Contact info -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
           <ul>
-            <?php
-                  /**
-                   * Displays the main menu
-                   * https://developer.wordpress.org/reference/functions/wp_nav_menu/
-                   */
-                  $args = array(
-                    'menu' => 'main-menu',
-                    'menu_id' => 'main-menu',
-                    'container' => 'nav',
-                    'depth' => 1,
-                    'echo' => false,
-                    'wrap-class' => 'footer-navigation',
-                    'items_wrap' => '%3$s'
-                  );
-                  echo strip_tags( wp_nav_menu( $args ), '<a><li>' );
-              ?>
+            <li>SELL Student Games 2020</li>
+            <li>LAB University of Applied Sciences</li>
+            <li>Mukkulankatu 19, 15210 Lahti</li>
+            <li><a href="mailto:sellgames2020@lamk.fi">sellgames2020@lamk.fi</a></li>
           </ul>
         </div>
-        <div class="col-6 col-md-2 col-xs-12">
+        <!-- Map container -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <?php do_shortcode('[wpgmza id="1"]') ?>
+        </div>
+        <!-- Social media -->
+        <div class="col-lg-3 col-md-2 col-sm-6 col-xs-12">
           <div class="sosial-container">
             <a href="https://www.facebook.com/SELLgames2020/" target="blank"><i class="fab fa-facebook-square fa-2x"></i></a>
             <a href="https://www.instagram.com/sellgames2020/" target="blank"><i class="fab fa-instagram fa-2x"></i><a>

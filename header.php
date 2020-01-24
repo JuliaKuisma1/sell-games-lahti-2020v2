@@ -32,7 +32,7 @@
     <header id="main-header">
       <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between">
         <a class="navbar-brand" href="<?php echo home_url(); ?>">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo_slogan.svg" height="48px" alt="Sell Games Lahti 2020">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/SELLGAMES_logo_header.svg" height="45px" alt="Sell Games Lahti 2020">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-bars"></i>

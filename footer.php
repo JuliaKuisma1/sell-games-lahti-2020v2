@@ -4,7 +4,7 @@
         <!-- SELL Logo -->
         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
           <a href="<?php echo home_url(); ?>">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/SELLGAMES_logo.png" height="90px" alt="Sell Games Lahti 2020">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/SELLGAMES_logo_footer.svg" height="85px" alt="Sell Games Lahti 2020">
           </a>
         </div>
         <!-- Contact info -->
@@ -26,9 +26,11 @@
         </div>
         <!-- Map container -->
         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-          <?php do_shortcode('[wpgmza id="1"]') ?>
+          <?php //do_shortcode('[wpgmza id="1"]') ?>
         </div>
       </div>
+        <div class="row">
+        </div>
     </div>
       
     </footer>

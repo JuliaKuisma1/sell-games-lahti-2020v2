@@ -1,7 +1,7 @@
 <?php
 
   // Hide the admin bar
-  show_admin_bar( false );
+  show_admin_bar( true );
 
 
   // Enqueue assets
@@ -68,8 +68,8 @@
       'id'            => 'sidebar',
       'before_widget' => '<div class="sidebar-widget">',
       'after_widget'  => '</div>',
-      'before_title'  => '<h5>',
-      'after_title'   => '</h5>',
+      'before_title'  => '<h2>',
+      'after_title'   => '</h2>',
     ) );
   
   }

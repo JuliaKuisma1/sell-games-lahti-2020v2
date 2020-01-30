@@ -4,7 +4,7 @@ Author: Miikka Saxlund, Julia Kuisma and Eetu Andronoff
 Description: WordPress theme for Sell Games 2020
 */
 
-span {
+div.wpgmza-infowindow span {
   color: black;
 }
 

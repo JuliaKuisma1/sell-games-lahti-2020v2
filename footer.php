@@ -1,13 +1,17 @@
     <footer id="main-footer" style="background-color: yellow">
     <div class="footer-container">
       <div class="row">
-        <!-- SELL Logo -->
+        <!-- SELL Logo and LAB logo -->
         <div class="col-lg-3 col-md-6 col-xs-12">
           <a href="<?php echo home_url(); ?>">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/SELLGAMES_logo_footer.svg" height="85px" alt="Sell Games Lahti 2020">
           </a>
+          <a href="">
+              <img class="lab" src="<?php echo get_stylesheet_directory_uri(); ?>/images/LAB_logo.png" alt="LAB logo" height="50px">
+          </a>
         </div>
-        <!-- Contact info -->
+
+        <!-- Contact info and social media -->
         <div class="col-lg-3 col-md-6 col-xs-12">
           <ul>
             <li>SELL Student Games 2020</li>
@@ -15,23 +19,27 @@
             <li>Mukkulankatu 19, 15210 Lahti</li>
             <li><a href="mailto:sellgames2020@lamk.fi">sellgames2020@lamk.fi</a></li>
           </ul>
-        </div>
-        <!-- Social media -->
-        <div class="col-lg-2 col-md-6 col-xs-12">
           <div class="sosial-container">
             <a href="https://www.facebook.com/SELLgames2020/" target="blank"><i class="fab fa-facebook-square fa-2x"></i></a>
             <a href="https://www.instagram.com/sellgames2020/" target="blank"><i class="fab fa-instagram fa-2x"></i><a>
             <a href="https://www.youtube.com/channel/UCqCLjasCVcWhM1v8lcD84mQ"><i class="fab fa-youtube fa-2x"></i></a>
           </div>
         </div>
+
+        <!-- Partners -->
+        <div class="col-lg-2 col-md-6 col-xs-12">
+          <a href="">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/OLL_logo.png" alt="OLL logo" height="90px">
+          </a>
+        </div>
+
         <!-- Map container -->
         <div class="col-lg-4 col-md-6 col-xs-12">
           <?php echo do_shortcode('[wpgmza id="1"]'); ?>
         </div>
+
       </div>
-        <div class="row">
-        </div>
-    </div>
+    </div> <!-- End of row -->
       
     </footer>
     <!-- Bootstrap -->

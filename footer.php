@@ -6,7 +6,7 @@
           <a href="<?php echo home_url(); ?>">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/SELLGAMES_logo_footer.svg" height="85px" alt="Sell Games Lahti 2020">
           </a>
-          <a href="">
+          <a href="https://www.lab.fi/en">
               <img class="lab" src="<?php echo get_stylesheet_directory_uri(); ?>/images/LAB_logo.png" alt="LAB logo" height="50px">
           </a>
         </div>
@@ -28,7 +28,7 @@
 
         <!-- Partners -->
         <div class="col-lg-2 col-md-6 col-xs-12">
-          <a href="">
+          <a href="https://oll.fi/en/home/">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/OLL_logo.png" alt="OLL logo" height="90px">
           </a>
         </div>

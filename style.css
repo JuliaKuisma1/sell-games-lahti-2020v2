@@ -1,6 +1,6 @@
 /*!
 Theme Name: Sell Games v2
-Author: Miikka Saxlund
+Author: Miikka Saxlund, Julia Kuisma and Eetu Andronoff
 Description: WordPress theme for Sell Games 2020
 */
 
@@ -102,7 +102,8 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 }
 
 .lab {
-  margin-top: 30px;
+  margin: 40px;
+  margin-left: 0;
 }
 
 /*
@@ -288,7 +289,7 @@ p {
 }
 
 .wp-block-button__link {
-  font-size: 16px;
+  font-size: 20px;
   font-family: sttransmission;
   border-radius: .25rem!important;
   padding: 12px 46px 12px 46px!important;

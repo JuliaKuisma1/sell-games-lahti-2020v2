@@ -26,7 +26,7 @@
         </div>
         <!-- Map container -->
         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-          <?php do_shortcode('[wpgmza id="1"]') ?>
+          <?php echo do_shortcode('[wpgmza id="1"]'); ?>
         </div>
       </div>
         <div class="row">

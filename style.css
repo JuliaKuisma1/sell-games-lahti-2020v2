@@ -102,8 +102,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 }
 
 .lab {
-  margin: 40px !important;
-  margin-left: 0;
+  margin: 40px 40px 40px 0 !important;
 }
 
 /*

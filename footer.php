@@ -2,13 +2,13 @@
     <div class="footer-container">
       <div class="row">
         <!-- SELL Logo -->
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="col-lg-3 col-md-6 col-xs-12">
           <a href="<?php echo home_url(); ?>">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/SELLGAMES_logo_footer.svg" height="85px" alt="Sell Games Lahti 2020">
           </a>
         </div>
         <!-- Contact info -->
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="col-lg-3 col-md-6 col-xs-12">
           <ul>
             <li>SELL Student Games 2020</li>
             <li>LAB University of Applied Sciences</li>
@@ -17,7 +17,7 @@
           </ul>
         </div>
         <!-- Social media -->
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="col-lg-2 col-md-6 col-xs-12">
           <div class="sosial-container">
             <a href="https://www.facebook.com/SELLgames2020/" target="blank"><i class="fab fa-facebook-square fa-2x"></i></a>
             <a href="https://www.instagram.com/sellgames2020/" target="blank"><i class="fab fa-instagram fa-2x"></i><a>
@@ -25,7 +25,7 @@
           </div>
         </div>
         <!-- Map container -->
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="col-lg-4 col-md-6 col-xs-12">
           <?php echo do_shortcode('[wpgmza id="1"]'); ?>
         </div>
       </div>

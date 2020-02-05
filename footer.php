@@ -34,10 +34,8 @@
         </div>
 
         <!-- Map container -->
-        <div class="map-container">
-          <div class="col-lg-4 col-md-6 col-xs-12">
-              <?php echo do_shortcode('[wpgmza id="1"]'); ?>
-          </div>
+        <div class="col-lg-4 col-md-6 col-xs-12">
+            <?php echo do_shortcode('[wpgmza id="1"]'); ?>
         </div>
 
       </div>

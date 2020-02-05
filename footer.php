@@ -34,8 +34,10 @@
         </div>
 
         <!-- Map container -->
-        <div class="col-lg-4 col-md-6 col-xs-12">
-          <?php echo do_shortcode('[wpgmza id="1"]'); ?>
+        <div class="maps-container">
+          <div class="col-lg-4 col-md-6 col-xs-12">
+              <?php echo do_shortcode('[wpgmza id="1"]'); ?>
+          </div>
         </div>
 
       </div>

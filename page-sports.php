@@ -1,6 +1,8 @@
 <?php
 /* Template Name: Sports */
 
+// Page that displays all sports
+
 get_header(); ?>
 
 <div class="main-content">

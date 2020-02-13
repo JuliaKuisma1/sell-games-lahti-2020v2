@@ -18,7 +18,7 @@ get_header(); ?>
       } ?>
     </div>
     <div id="sidebar-container" class="col-lg-4 col-md-5 col-sm-12">
-      <?php dynamic_sidebar( 'sidebar_tabletennis' ); ?>
+      <?php dynamic_sidebar( 'sidebar_sport' ); ?>
     </div>
   </div>
 </div>

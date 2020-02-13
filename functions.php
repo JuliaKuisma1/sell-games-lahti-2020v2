@@ -87,6 +87,15 @@
       'before_title'  => '<h2>',
       'after_title'   => '</h2>',
     ));
+
+    register_sidebar( array(
+      'name'          => 'Sport',
+      'id'            => 'sidebar_sport',
+      'before_widget' => '<div class="sidebar-widget">',
+      'after_widget'  => '</div>',
+      'before_title'  => '<h2>',
+      'after_title'   => '</h2>',
+    ));
   
   }
   add_action( 'widgets_init', 'arphabet_widgets_init' );

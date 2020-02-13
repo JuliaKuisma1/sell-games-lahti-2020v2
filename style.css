@@ -264,6 +264,10 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   color: #FED13B;
 }
 
+.sidebar-image {
+  margin: 10px 0;
+}
+
 .main-content h2 {
   color: #FED13B;
   margin-bottom: 20px!important;

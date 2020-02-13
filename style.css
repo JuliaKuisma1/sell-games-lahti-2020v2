@@ -89,6 +89,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 .footer-container ul {
   list-style: none !important;
   padding-left: 0 !important;
+  margin: 0 !important;
 }
 
 .footer-container a {
@@ -101,15 +102,30 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   height: 40px;
 }
 
-.lab {
-  margin: 40px 40px 40px 0 !important;
+.footer-container .centered {
+  margin-bottom: 30px;
 }
 
-/*@media only screen and (max-width: 440px) {
-  .map-container {
-    display: none !important;
+.sell-logo {
+  max-width: 100%;
+}
+
+.lab-logo {
+  max-width: 100%;
+  height: auto;
+  max-height: 50px;
+  /* margin: 40px 40px 40px 0 !important; */
+}
+
+@media only screen and (max-width: 440px) {
+  #main-content-container, #sidebar-container, .footer-container {
+    padding: 30px 10px!important;
   }
-}*/
+  
+  /* .map-container {
+    display: none !important;
+  } */
+}
 
 /*
  * Schedule page

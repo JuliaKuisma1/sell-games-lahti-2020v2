@@ -24,7 +24,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: sttransmission;
+  font-family: sttransmission,"Arial Black";
   text-transform: uppercase;
   margin-bottom: .5rem!important;
 }

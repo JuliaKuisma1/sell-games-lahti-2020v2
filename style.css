@@ -250,6 +250,45 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   text-decoration: none;
 }
 
+.category-selection {
+  text-align: center;
+}
+
+button.category {
+  display: inline-block;
+  border-radius: 12px;
+  background-color: rgb(190, 58, 34);
+  border-color: rgb(190, 58, 34);
+  color: white;
+  font: 100% "Arial Heavy", "Times New Roman", Times, serif;
+  margin: 0 10px auto;
+  padding: 15px 20px;
+}
+
+button.category:hover {
+  background-color: #FED13B;
+  border-color: #FED13B;
+  color: black;
+}
+
+.left {
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 4px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+a.return {
+  text-decoration: none;
+}
+
+h2.category {
+  text-align: center;
+  margin-top: 20px;
+}
+
 /* Default page */
 
 #main-content-container, #sidebar-container {

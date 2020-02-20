@@ -1,20 +1,13 @@
-<?php 
-/* Template Name: Archive */
+<?php get_header(); ?>
 
-get_header(); ?>
-
-  <main>
-    <div class="category-selection">
-      <a href="../category/news/"><button class="category">News</button></a>
-      <a href="../category/interview/"><button class="category">Interviews</button></a>
-    </div>
-    <div class="blog-posts card-deck">
-    <?php 
-      // the query
-      $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>-1));
-
-        if ( $wpb_all_query->have_posts() ) :
-          while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post();
+<div class="main-content">
+  <div id="main-content-container">
+    <a class="return" href="../../news"><i class="arrow left"></i> Return to all news</a>
+    <h2 class="category">Interviews</h2>
+      <div class="blog-posts card-deck">
+        <?php 
+        if ( have_posts() ) :
+          while ( have_posts() ) : the_post();
           ?>
             <div class="blog-posts-card card">
               <a href="<?php the_permalink(); ?>">
@@ -53,8 +46,10 @@ get_header(); ?>
           <?php
         else :
           echo "Nothing found";
-        endif; ?>
+        endif;
+      ?>
     </div>
-  </main>
+    </div>
+  </div>
 
 <?php get_footer(); ?>

@@ -8,7 +8,7 @@
     <div class="main-content">
         <div id="main-content-container">
             <div class="row">
-            <img src="http://localhost/wordpress/wp-content/uploads/2020/03/zest_winter.png" alt="zest" height="300" width="300">
+            <img src="https://sellgames2020.fi/wp-content/uploads/2020/03/zest_winter.png" alt="zest" height="300" width="300">
             <div class="col">
             <h2>Sorry!</h2><h3>We couldn't find what you were looking for.</h3>
             <br>

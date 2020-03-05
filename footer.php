@@ -10,7 +10,7 @@
           </div>
           <div class="d-flex justify-content-center centered">
             <a href="https://www.lab.fi/en">
-                <img class="lab-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/images/LAB_logo.png" alt="LAB logo" height="50px">
+                <img class="lab-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/images/LAB_logo_c.png" alt="LAB logo" height="50px">
             </a>
           </div>
         </div>
@@ -36,7 +36,7 @@
         <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
           <div class="d-flex justify-content-center centered">
             <a href="https://oll.fi/en/home/">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/OLL_logo.png" alt="OLL logo" height="90px">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/OLL_logo_c.png" alt="OLL logo" height="90px">
             </a>
           </div>
         </div>

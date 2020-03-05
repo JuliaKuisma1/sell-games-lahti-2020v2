@@ -4,10 +4,12 @@ Author: Miikka Saxlund, Julia Kuisma and Eetu Andronoff
 Description: WordPress theme for Sell Games 2020
 */
 
+/* Maps span */
 div.wpgmza-infowindow span {
   color: black;
 }
 
+/* General setting */
 @font-face {
   font-family: sttransmission;
   src: url("./fonts/StTransmission-800-ExtraBold.otf"); 
@@ -114,17 +116,12 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   max-width: 100%;
   height: auto;
   max-height: 50px;
-  /* margin: 40px 40px 40px 0 !important; */
 }
 
 @media only screen and (max-width: 440px) {
   #main-content-container, #sidebar-container, .footer-container {
     padding: 30px 10px!important;
   }
-  
-  /* .map-container {
-    display: none !important;
-  } */
 }
 
 /*
@@ -164,7 +161,6 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   color: white;
 }
 
-/* Style the tab content */
 .tabcontent {
   display: none;
   padding: 6px 12px;
@@ -340,6 +336,11 @@ h2.category {
   background-color: white !important;
   padding: 10px;
   margin-bottom: 20px;
+}
+
+.partner-logo {
+  padding: 10px;
+  background-color: white;
 }
 
 /* Subpage menu */

@@ -122,7 +122,10 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   #main-content-container, #sidebar-container, .footer-container {
     padding: 30px 10px!important;
   }
-  #wpgmza_map {
+}
+
+@media only screen and (max-width: 676px) {
+  .map-container {
     visibility: hidden;
   }
 }

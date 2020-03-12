@@ -14,8 +14,6 @@
           _e( '404 - Not found' );
         } else {
           wp_title();
-          _e( ' - ' );
-          bloginfo( 'name' );
         } 
       ?>
     </title>

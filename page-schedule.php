@@ -35,144 +35,109 @@ get_header(); ?>
         <div id="main-content-container" class="col-lg-8 col-sm-12">
             <h1>Schedule</h1>
 
-            <div class="tab">
-                <button class="tablinks" onclick="openDate(event, 'Friday')">Friday</button>
-                <button class="tablinks" onclick="openDate(event, 'Saturday')">Saturday</button>
-                <button class="tablinks" onclick="openDate(event, 'Sunday')">Sunday</button>
-            </div>
-
-            <div id="Friday" class="tabcontent">
-                <?php $friday = wp_remote_get('http://35.217.19.28/sell-games-2020/public/index.php/api/events/date/2020-05-15');
+            <div id="Friday">
+                <h2>Friday 15.5</h2>
+                <?php $friday = wp_remote_get('https://sellgames2020.fi/backend/api/events/date/2020-05-15');
                 $fridayevents = json_decode($friday['body']);
-                $data = $fridayevents->data; ?>
-                <table>
-                    <?php foreach($data as &$event) {?>
-                        <tr class="class-<?php echo $event->sport->id ?>">
-                            <td>
-                            <p><?php echo $event->start_time ?> - <?php echo $event->end_time ?></p>
-                            </td>
-                            <td>
-                                <p class="eventname"><?php echo $event->name ?></p>
-                                <p><?php echo $event->venue->name ?></p>
-                            </td>
-                        </tr>
-                    <?php } ?>
-                </table>
+                $data = $fridayevents->data;
+
+                foreach($data as &$event) {?>
+                    <ul class="class-<?php echo $event->sport->id ?>">
+                        <li class="eventname"><?php echo $event->name ?></li>
+                        <li><?php echo $event->start_time ?> - <?php echo $event->end_time ?></li>
+                        <li><?php echo $event->venue->name ?></li>
+                    </ul>
+                <?php } ?>
             </div>
 
-            <div id="Saturday" class="tabcontent">
-                <?php $saturday = wp_remote_get('http://35.217.19.28/sell-games-2020/public/index.php/api/events/date/2020-05-16');
-                $saturdayevents = json_decode($saturday['body']);
-                $data = $saturdayevents->data; ?>
-                <table>
-                    <?php foreach($data as &$event) {?>
-                        <tr>
-                            <td>
-                                <p><?php echo $event->start_time ?> - <?php echo $event->end_time ?></p>
-                            </td>
-                            <td>
-                                <p class="eventname"><?php echo $event->name ?></p>
-                                <p><?php echo $event->venue->name ?></p>
-                            </td>
-                        </tr>
-                    <?php } ?>
-                </table>
-            </div>
-
-            <div id="Sunday" class="tabcontent">
-                <?php $saturday = wp_remote_get('http://35.217.19.28/sell-games-2020/public/index.php/api/events/date/2020-05-17');
+            <div id="Saturday">
+                <h2>Saturday 16.5</h2>
+                <?php $saturday = wp_remote_get('https://sellgames2020.fi/backend/api/events/date/2020-05-16');
                 $saturdayevents = json_decode($saturday['body']);
                 $data = $saturdayevents->data;
-                ?>
-                <table>
-                    <?php foreach($data as &$event) {?>
-                        <tr>
-                            <td>
-                            <p><?php echo $event->start_time ?> - <?php echo $event->end_time ?></p>
-                            </td>
-                            <td>
-                                <p class="eventname"><?php echo $event->name ?></p>
-                                <p><?php echo $event->venue->name ?></p>
-                            </td>
-                        </tr>
-                    <?php } ?>
+
+                foreach($data as &$event) {?>
+                    <ul class="class-<?php echo $event->sport->id ?>">
+                        <li class="eventname"><?php echo $event->name ?></li>
+                        <li><?php echo $event->start_time ?> - <?php echo $event->end_time ?></li>
+                        <li><?php echo $event->venue->name ?></li>
+                    </ul>
+                <?php } ?>
+            </div>
+
+            <div id="Sunday">
+                <h2>Sunday 17.5</h2>
+                <?php $saturday = wp_remote_get('https://sellgames2020.fi/backend/api/events/date/2020-05-17');
+                $saturdayevents = json_decode($saturday['body']);
+                $data = $saturdayevents->data;
+
+                foreach($data as &$event) {?>
+                    <ul class="class-<?php echo $event->sport->id ?>">
+                        <li class="eventname"><?php echo $event->name ?></li>
+                        <li><?php echo $event->start_time ?> - <?php echo $event->end_time ?></li>
+                        <li><?php echo $event->venue->name ?></li>
+                    </ul>
+                <?php } ?>
                 </table>
             </div>
 
         </div>
         <div id="sidebar-container" class="col-lg-4 col-sm-12">
+                <input type="checkbox" name="" id=""><label>Show all</label>
+                <input type="checkbox" name="" id=""><label>Hide all</label>
             <h2>Sport</h2>
             <table>
                 <tr>
-                    <td><input type="checkbox" name="day" id="athletics"> <label for="athletics">Athletics</label></td>
+                    <td><input type="checkbox" id="athletics" class="toggle"></input><label for="athletics">Athletics</label></td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="day" id="wrestling"> <label for="wrestling">Wrestling</label></td>
+                    <td><input type="checkbox" id="wrestling" class="toggle"></input><label for="wrestling">Wrestling</label></td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="day" id="judo"> <label for="judo">Judo</label></td>
+                    <td><input type="checkbox" id="judo" class="toggle"></input><label for="judo">Judo</label></td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="day" id="basketball"> <label for="basketball">Basketball</label></td>
+                    <td><input type="checkbox" id="basketball" class="toggle"></input><label for="basketball">Basketball</label></td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="day" id="volleyball"> <label for="volleyball">Volleyball</label></td>
+                    <td><input type="checkbox" id="volleyball" class="toggle"></input><label for="volleyball">Volleyball</label></td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="day" id="floorball"> <label for="floorball">Floorball</label></td>
+                    <td><input type="checkbox" id="floorball" class="toggle"></input><label for="floorball">Floorball</label></td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="day" id="football" onclick="filterSport()"> <label for="football">Football</label></td>
+                    <td><input type="checkbox" id="football" class="toggle"></input><label for="football">Football</label></td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="day" id="tabletennis"> <label for="tabletennis">Table tennis</label></td>
+                    <td><input type="checkbox" id="tabletennis" class="toggle"></input><label for="tabletennis">Table tennis</label></td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="day" id="orienteering"> <label for="orienteering">Orienteering</label></td>
+                    <td><input type="checkbox" id="orienteering" class="toggle"></input><label for="orienteering">Orienteering</label></td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="day" id="discgolf"> <label for="discgolf">Disc golf</label></td>
+                    <td><input type="checkbox" id="discgolf" class="toggle"></input><label for="discgolf">Disc golf</label></td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="day" id="molkky"> <label for="molkky">Mölkky</label></td>
+                    <td><input type="checkbox" id="molkky" class="toggle"></input><label for="molkky">Mölkky</label></td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="day" id="esports"> <label for="esports">Esports</label></td>
+                    <td><input type="checkbox" id="esports" class="toggle"></input><label for="esports">Esports</label></td>
                 </tr>
             </table>
-            <button onclick='filterSport()'>Football</button>
+            <h2>Day</h2>
+            <table>
+                <tr>
+                    <td><input type="checkbox" id="friday" class="toggle"></input><label for="friday">Friday</label></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="saturday" class="toggle"></input><label for="saturday">Saturday</label></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="sunday" class="toggle"></input><label for="sunday">Sunday</label></td>
+                </tr>
+            </table>
         </div>
     </div>
 </div>
-<script>
-    function openDate(evt, day) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-
-    document.getElementById(day).style.display = "block";
-    evt.currentTarget.className += " active";
-    }
-
-    function filterSport () {
-        var appBanners = document.getElementsByClassName('class-31');
-        var classes = ["class-31", "class-32", "class-35", "class-36"];
-
-        if (document.getElementById("football").checked == true) {
-            
-        }
-        for (var i = 0; i < appBanners.length; i ++) {
-            appBanners[i].style.display = 'none';
-        }
-    }
-</script>
 
 <?php get_footer(); ?>
